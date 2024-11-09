@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>details</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link href="../css/style.css" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-image:url("../PICTURES/hotelDeVilleOran.jpg") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: azure;
+        }        
+    </style>
+    <script>
+        let xmlhttp = new XMLHttpRequest();
+
+let sFav = new Set();
+
+function loadXMLDoc() {    
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {   
+            fetchData(); 
+            initSetFavoriteBiens();       
+        }
+    };
+    xmlhttp.open("GET", "../data/bdd.xml", true);
+    xmlhttp.send();
+}
+
+function fetchData() {
+    initSetFavoriteBiens();
+    let i;
+    let xmlDoc=xmlhttp.responseXML;
+    let table = "<tr><th>TYPE</th><th>SUPERFICIE</th><th>LOCALISATION</th><th>CONSO</th><th>PRIX €</th></tr>";
+    let x = xmlDoc.getElementsByTagName("BIEN_IMMOBILIER"); 
+    
+    for (i =0; i <x.length; i++) {
+        table += "<tr>" 
+        + "<td>" 
+        + x[i].getElementsByTagName("TYPE")[0].childNodes[0].nodeValue 
+        + "</td>" 
+        + "<td>" 
+        + x[i].getElementsByTagName("SUPERFICIE")[0].childNodes[0].nodeValue 
+        + "<td>" 
+        + x[i].getElementsByTagName("LOCALISATION")[0].childNodes[0].nodeValue 
+        + "<td>" 
+        + x[i].getElementsByTagName("CONSO_ENERGETIQUE")[0].childNodes[0].nodeValue 
+        + "</td>" 
+        + "<td>" 
+        + x[i].getElementsByTagName("PRIX")[0].childNodes[0].nodeValue
+        +"</td>"
+        + "<td>" 
+        + "<img src='." + x[i].getElementsByTagName("SRC1")[0].childNodes[0].nodeValue + "' alt='image' width='100px'>"
+        + "</td>" 
+        + "<td>"
+        + "<input type='checkbox' onclick='setFavorite(event)' value='"
+        + x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue+ "'";
+        if(sFav.has(x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue)){
+            table+="checked"
+        }
+        table+=">"      
+        + "</td>"
+        + "</tr>";
+    }
+
+    document.getElementById("miqmiq").innerHTML = table;
+} 
+
+//Etape 1
+function setFavorite(ev){
+    if (ev.currentTarget.checked) {
+        sFav.add(ev.currentTarget.value);
+    } else {
+        sFav.delete(ev.currentTarget.value);
+    }
+
+    // Convertir le contenu de l'ensemble en une chaîne de caractères séparée par des virgules
+    let favString = Array.from(sFav).join(',');
+
+    // Enregistrer la chaîne dans le localStorage sous la clé "favorites"
+    localStorage.setItem("favorites", favString);
+    if (ev.currentTarget.checked) {
+        sFav.add(ev.currentTarget.value)
+        console.log("Checked - id :" + ev.currentTarget.value);        
+    } else {
+        sFav.delete(ev.currentTarget.value)
+        console.log("Unchecked - id :" + ev.currentTarget.value);          
+    }
+    afficheFavorisBiens()
+    console.log(sFav);
+
+    //////
+}
+function chargerdetailsdansPageConsultation(id){
+    window.location.href="./details.html?id="+id+"";
+}
+
+//Etape 2
+function afficheFavorisBiens(){
+    let i;
+    let xmlDoc = xmlhttp.responseXML;    
+    let table = "<tr><th>TYPE</th><th>SUPERFICIE</th><th>LOCALISATION</th><th>CONSO</th><th>PRIX €</th></tr>";
+    let x = xmlDoc.getElementsByTagName("BIEN_IMMOBILIER"); 
+    for (i = 0; i < x.length; i++) {  
+        if(sFav.has(x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue )){     
+        table += "<tr>" 
+            + "<td>" 
+        + x[i].getElementsByTagName("TYPE")[0].childNodes[0].nodeValue 
+        + "</td>" 
+        + "<td>" 
+        + x[i].getElementsByTagName("SUPERFICIE")[0].childNodes[0].nodeValue 
+        + "<td>" 
+        + x[i].getElementsByTagName("LOCALISATION")[0].childNodes[0].nodeValue 
+        + "<td>" 
+        + x[i].getElementsByTagName("CONSO_ENERGETIQUE")[0].childNodes[0].nodeValue 
+        + "</td>" 
+        + "<td>" 
+        + x[i].getElementsByTagName("PRIX")[0].childNodes[0].nodeValue
+        + "</td>" 
+        + "<td>" 
+        + "<img src='." + x[i].getElementsByTagName("SRC1")[0].childNodes[0].nodeValue + "' alt='image' width='100px'>"
+        + "</td>" 
+        + "</tr>";
+    }
+    ;
+}
+    document.getElementById("tblFavorite").innerHTML = table;
+    
+    
+}
+
+//Etape 3
+function initSetFavoriteBiens(){
+      // Vérifier si des choix de livres préférés sont enregistrés dans le localStorage
+      if (localStorage.getItem("favorites") != null) {
+        let favs = localStorage.getItem("favorites");
+        let myArr = favs.split(",");
+        for (let i = 0; i < myArr.length; i++) {
+            // Ajouter chaque ID de livre préféré à l'ensemble sFav
+            sFav.add(myArr[i]);
+        }
+
+        // Mettre à jour le tableau des livres préférés
+        afficheFavorisBiens();
+        
+    }
+}
+
+
+    </script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<body  onload="loadXMLDoc()">
+    <br>
+    <br>
+    <div style="display: flex; width: 1200px; justify-content: space-around;">
+        <div>
+            Biens
+            <br>
+            <br>
+            <table class="table table-dark table-striped table-hover" id="miqmiq">
+
+            </table>
+        </div>
+        <div>
+            Mes biens favoris
+            <br>
+            <br>
+            <table class="table table-dark table-striped table-hover" id="tblFavorite">
+              
+            </table>
+         
+        </div>
+    </div>    
+
+
+
+
+    <footer id="fisazefi">
+        <div id="haut">
+            <div id="hautg">
+                <p>
+                    Chez T Immobilier, nous nous engageons à vous offrir un service exceptionnel <br>
+                    pour toutes vos transactions immobilières. Que vous cherchiez la maison de vos rêves, un
+                    investissement <br>
+
+                    immobilier ou que vous souhaitiez vendre votre propriété, notre équipe dévouée est là pour vous
+                    accompagner <br>
+                    à chaque étape du processus. Avec notre expertise du marché local, notre professionnalisme et notre
+                    engagement <br>
+                    envers la satisfaction du client, nous sommes fiers d'être votre partenaire de confiance dans le
+                    secteur immobilier. <br>
+                    Découvrez le meilleur de l'immobilier avec T Immobilier."
+                </p>
+            </div>
+            <div id="hautBas">
+                <form>
+                    <h5>Exprimez vous ici! </h5>
+                    <p>Parles nous de tes passions.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Adresse Mail">
+                        <button class="btn btn-primary" type="button">S'abonner</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        <div id="cont">
+            <div id="gauched">
+                <img src="../PICTURES/nouVLog/LogoBagita.png" alt="lgo" id="ERDD" width="120px">
+                <p>
+                    2023 T IMMOBILIER , Inc. All rights reserved.
+                </p>
+
+            </div>
+
+
+            <div id="settefRe">
+                
+                <span>
+                    <i class="bi bi-facebook"></i>
+                    <a href="https://www.instagram.com/rabah_tb63/" target="_BLANK"><img src="../PICTURES/instagram.png"
+                            alt="Instagram " width="50px" class="bling"></a></span>
+                <span><a href="https://www.facebook.com/rabeh.toubal" target="_BLANK"><img src="../PICTURES/facebook.png"
+                            alt="Facebook" width="50px" class="bling"></a></span>
+                <span><a href="https://www.google.fr/maps/place/Paris+Prestige+Cars/@48.8724263,2.2962537,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPP8knDHfo-qW5JngRbfx5fhDJ7aj6pMH5Xc0Mx!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPP8knDHfo-qW5JngRbfx5fhDJ7aj6pMH5Xc0Mx%3Dw114-h86-k-no!7i4032!8i3024!4m9!1m2!2m1!1scars+paris+!3m5!1s0x47e6702f6adfaecb:0x243ba975c5ef5bf1!8m2!3d48.8724263!4d2.2962537!15sCgpjYXJzIHBhcmlzWgwiCmNhcnMgcGFyaXOSAQ91c2VkX2Nhcl9kZWFsZXLgAQA"
+                        target="_BLANK"><img src="../PICTURES/localisation.png" alt="Localisation" width="50px"
+                            class="bling"></a></span>
+                <span>
+                    <img src="../PICTURES/tel.png" alt="Appeler nous" width="50px" class="bling">
+                </span>
+                <span style="width: 30px;">
+
+                </span>
+                <span>
+                    <a href="#"><img src="../PICTURES/scroll haut.png" id="scrollhaut" alt="dcrom"></a>
+
+                </span>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html> 

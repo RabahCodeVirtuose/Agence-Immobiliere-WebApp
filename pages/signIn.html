@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ma page principale !</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+    <script>
+        let xmlhttp = new XMLHttpRequest();
+        function loadXMLDoc() {
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            verrrif();
+        }
+    };
+    xmlhttp.open("GET", "../data/admins.xml", true);
+    xmlhttp.send();
+}
+function verrrif(){
+    let i;
+    let xmlDoc=xmlhttp.responseXML;
+    let x = xmlDoc.getElementsByTagName("ADMIN"); 
+    for(i=0;i<x.length;i++){
+        if(document.getElementById("IdfansPG").value==x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue && document.getElementById("mdpPG").value==x[i].getElementsByTagName("MDP")[0].childNodes[0].nodeValue){
+        window.location.href="./baseB.html";
+        }
+        else{
+        document.getElementById("cheteki").innerHTML="Erreur veillez ressayer";
+        }
+    }
+}
+function vidertt(){
+    document.getElementById("mdpPG").value="";
+    document.getElementById("cheteki").innerHTML="";
+
+}
+function vidertt1(){
+    document.getElementById("cheteki").innerHTML="";
+
+}
+
+    </script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<body style="font-family: 'Helvetica', sans-serif;" id="mainbody1" onload="loadXMLDatacc()">
+    <div id="DivPrincipalePageLOgin">
+        <div id="contFormulaire">
+            <div id="LeftS">
+                <div>
+                    <img src="../PICTURES/nouVLog/LOGIN.png" alt="login" width="200px">
+                </div>
+                <br>
+                <input type="text" class="form-control" placeholder="Identifiant" size="50" id="IdfansPG" onchange="vidertt()">
+                <input type="password" class="form-control" placeholder="***********"size="50" id="mdpPG" onchange="vidertt1()">
+                <div id="cheteki" style="color: rgb(192, 3, 3);font-weight: bold;">
+
+                </div>
+                <button type="button" onclick="loadXMLDoc()" class="btn btn-secondary"  id="batbout">Log in</button> 
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault" style="color: azure;">
+                        Se souvenir de moi
+                    </label>
+                  </div>
+                  <p style="color: azure;">
+                    Vous n'avez pas de compte ? <a  style="color: rgb(255, 206, 47);" href="#">Inscrivez-vous</a>
+                  </p>
+            </div>
+            <div id="RightS">
+                <img src="../PICTURES/nouVLog/QWX.png" id="mechtouh">
+            </div>
+
+        </div>
+       
+   
+        
+    </div>
+
+   
+</body>
+<!-- #region<footer id="fisazefi">
+    <div id="haut">
+        <div id="hautg">
+            <p>
+                Chez T Immobilier, nous nous engageons à vous offrir un service exceptionnel <br>
+                pour toutes vos transactions immobilières. Que vous cherchiez la maison de vos rêves, un
+                investissement <br>
+
+                immobilier ou que vous souhaitiez vendre votre propriété, notre équipe dévouée est là pour vous
+                accompagner <br>
+                à chaque étape du processus. Avec notre expertise du marché local, notre professionnalisme et notre
+                engagement <br>
+                envers la satisfaction du client, nous sommes fiers d'être votre partenaire de confiance dans le
+                secteur immobilier. <br>
+                Découvrez le meilleur de l'immobilier avec T Immobilier."
+            </p>
+        </div>
+        <div id="hautBas">
+           
+        </div>
+
+
+    </div>
+    <div id="cont">
+        <div id="gauched">
+            <img src="../PICTURES/nouVLog/LogoBagita.png" alt="lgo" id="ERDD" width="120px">
+            <p>
+                2023 T IMMOBILIER , Inc. All rights reserved.
+            </p>
+
+        </div>
+
+
+        <div id="settefRe">
+            <span>
+                <i class="bi bi-facebook"></i>
+                <a href="https://www.instagram.com/rabah_tb63/" target="_BLANK"><img src="../PICTURES/instagram.png"
+                        alt="Instagram " width="50px" class="bling"></a></span>
+            <span><a href="https://www.facebook.com/rabeh.toubal" target="_BLANK"><img src="../PICTURES/facebook.png"
+                        alt="Facebook" width="50px" class="bling"></a></span>
+            <span><a href="https://www.google.fr/maps/place/Paris+Prestige+Cars/@48.8724263,2.2962537,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPP8knDHfo-qW5JngRbfx5fhDJ7aj6pMH5Xc0Mx!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPP8knDHfo-qW5JngRbfx5fhDJ7aj6pMH5Xc0Mx%3Dw114-h86-k-no!7i4032!8i3024!4m9!1m2!2m1!1scars+paris+!3m5!1s0x47e6702f6adfaecb:0x243ba975c5ef5bf1!8m2!3d48.8724263!4d2.2962537!15sCgpjYXJzIHBhcmlzWgwiCmNhcnMgcGFyaXOSAQ91c2VkX2Nhcl9kZWFsZXLgAQA"
+                    target="_BLANK"><img src="../PICTURES/localisation.png" alt="Localisation" width="50px"
+                        class="bling"></a></span>
+            <span>
+                <img src="../PICTURES/tel.png" alt="Appeler nous" width="50px" class="bling">
+            </span>
+        </div>
+
+    </div>
+</footer> -->
+
+</html>

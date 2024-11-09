@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ma 1ère page HTML !</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link href="../css/style.css" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: azure;
+            background-image:url("../PICTURES/arrierePlanSite.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #buttizefiozef{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #data{
+            border-radius: 25px;
+            box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+        }
+        #rabrab{
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+        }
+        #resultats{
+            border-radius: 25px;
+            box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+        }
+        #vadsde{
+            color: rgb(19, 92, 226);
+            padding: 5px;
+            border-radius: 5px;
+            margin: 3%;
+            box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.197);
+
+
+        }
+    </style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<body>
+    <div id="buttizefiozef">
+        <button type="button" onclick="loadXMLDoc()" class="btn btn-outline-primary">afficher</button>
+    <button type="button" onclick="showForm()" class="btn btn-outline-primary">Ajouter un Bien </button>
+    </div>
+    
+    <br><br>
+   
+
+    <table id="data" class="table table-dark table-striped table-hover" style="width: 900px;"></table>
+    <div style="height: 4px;">
+
+    </div>
+    <div id="pageLinks" style="display:none;">        
+      
+    </div>
+    <br>
+    <br>
+    <h1 id="vadsde">Recherche de Biens Immobiliers</h1>
+    
+    <div id="control11">
+        <div id="lapojh">
+            <input class="form-control me-2" type="search" placeholder="Chercher ici!" style="width: 50%;" aria-label="Search" onchange="viderres1()" id="inputbdd">
+            <button class="btn btn-outline-primary" style="width: 70px;" type="submit" onclick="rechercher1(event)">Search</button>
+
+        </div>
+        <form id="rabrab">
+            <label for="prixMin">Prix Min :</label>
+            <input type="number" id="prixMin" min="0" step="1000" onchange="afficherBiens()">
+    
+            <label for="prixMax">Prix Max :</label>
+            <input type="number" id="prixMax" min="0" step="1000" onchange="afficherBiens()">
+    
+            <label for="quartier">Wilaya :</label>
+            <select id="quartier" onchange="afficherBiens()">
+                <option value="Tous">Tous</option>
+                <option value="ALGER">Alger</option>
+                <option value=" TIZI-OUZOU">Tizi-Ouzou</option>
+                <!-- Ajoutez d'autres options selon vos quartiers -->
+            </select>
+    
+            <label for="typeBien">Type :</label>
+            <select id="typeBien" onchange="afficherBiens()">
+                <option value="Tous">Tous</option>
+                <option value="APPARTEMENT">Appartement</option>
+                <option value="VILLA">Villa</option>
+                <!-- Ajoutez d'autres options selon vos types de biens -->
+            </select>
+    
+            <label for="tri">Trier par prix :</label>
+            <select id="tri" onchange="trierBiens()">
+                <option value="asc">Ascendant</option>
+                <option value="desc">Descendant</option>
+            </select>
+        </form>
+    </div>
+
+    <div id="pageLinks1" style="display:none;">        
+      
+    </div>
+    <table id="resultats" class="table table-dark table-striped"></table>
+
+    <table id="mytab" style="display: none;"class="table table-dark table-striped table-hover">
+        <tr>
+            <td>NOM</td>
+            <td><input type="text" class="form-control" size="50" id="nomSQ"></td>
+        </tr>
+        <tr>
+            <td>PIECES</td>
+            <td><input type="text" class="form-control" size="50" id="piecesSQ"></td>
+        </tr>
+        <tr>
+        <tr>
+            <td>CHAUFFAGE</td>
+            <td><input type="text" class="form-control" size="50" id="chauffageSQ"></td>
+        </tr>
+            <td>TYPE</td>
+            <td><input type="text" class="form-control" size="50" id="type11"></td>
+        </tr>
+        <tr>
+            <td>SUPERFICIE</td>
+            <td><input type="text" class="form-control" size="50" id="superficie"></td>
+        </tr>
+        <tr>
+            <td>LOCALISATION</td>
+            <td><input type="text" class="form-control" size="50" id="localisation"></td>
+        </tr>
+        <tr>
+            <td>CONSO_ENERGETIQUE</td>
+            <td><input type="text" class="form-control" size="50" id="consoEnergetique"></td>
+        </tr>
+        <tr>
+            <td>ETAGE</td>
+            <td><input type="text" class="form-control" size="50" id="etaAge"></td>
+        </tr>
+        <tr>
+            <td>ASSENCEUER</td>
+            <td><input type="text" class="form-control" size="50" id="assenceur"></td>
+        </tr>
+        <tr>
+            <td>JARDIN</td>
+            <td><input type="text" class="form-control" size="50" id="jaRDin"></td>
+        </tr>
+        <tr>
+            <td>PISCINE</td>
+            <td><input type="text" class="form-control" size="50" id="piscinE"></td>
+        </tr>
+        <tr>
+            <td>PRIX</td>
+            <td><input type="text" class="form-control" size="50" id="prix"></td>
+        </tr>
+        <tr>
+            <td><input type="hidden" id="hId"></td>
+            <td>
+                <button type="button" onclick="updateBien()" class="btn btn-success" id="btnUpdate">Valider</button>  
+                <button type="button" onclick="addbien()" class="btn btn-info" id="btnAdd">ajouter</button>
+          
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html> 

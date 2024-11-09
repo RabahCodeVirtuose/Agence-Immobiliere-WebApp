@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BASEADMINS>
+    <ADMIN>
+        <ID>rabah_tb63</ID>
+        <MDP>%Rabahtoubalamga4520032003</MDP> 
+    </ADMIN>
+    <ADMIN>
+        <ID>saad</ID>
+        <MDP>2004</MDP> 
+    </ADMIN>
+    <ADMIN>
+        <ID>lynda</ID>
+        <MDP>2003</MDP> 
+    </ADMIN>
+    <ADMIN>
+        <ID>tranhainam</ID>
+        <MDP>ubo</MDP> 
+    </ADMIN>
+</BASEADMINS>

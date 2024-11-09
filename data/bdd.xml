@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AGENCE_IMMOBILIERE>
+    <BIEN_IMMOBILIER>
+        <ID>1</ID>
+        <NOM>Villa des Cimes</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>75 M²</SUPERFICIE>
+        <LOCALISATION>455  Rue Abane Ramdane, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>A</CONSO_ENERGETIQUE>
+        <ETAGE>2</ETAGE>
+        <ASCENSEUR>OUI</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>NON</PISCINE>
+        <PRIX>120000</PRIX>
+       <SRC1>./PICTURES/appartements/1-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/1-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/1-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>2</ID>
+         <NOM> Appartement Azur</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>90 M²</SUPERFICIE>
+        <LOCALISATION>456 Rue Abane Ramdane, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>B</CONSO_ENERGETIQUE>
+        <ETAGE>3</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>NON</PISCINE>
+        <PRIX>135000</PRIX>
+         <SRC1>./PICTURES/appartements/2-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/2-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/2-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>3</ID>
+        <NOM>Résidence Émeraude</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>300 M²</SUPERFICIE>
+        <LOCALISATION>789 Boulevard Amirouche, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>2</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>OUI</JARDIN>
+        <PISCINE>NON</PISCINE>
+        <PRIX>350000</PRIX>
+        <SRC1>./PICTURES/appartements/3-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/3-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/3-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>4</ID>
+          <NOM>Chalet Montagnard</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>400 M²</SUPERFICIE>
+        <LOCALISATION>101 Rue Didouche Mourad, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>B</CONSO_ENERGETIQUE>
+        <ETAGE>3</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>OUI</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>550000</PRIX>
+         <SRC1>./PICTURES/appartements/4-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/4-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/4-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>5</ID>
+         <NOM>Maison Soleil Levant</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>250 M²</SUPERFICIE>
+        <LOCALISATION>202 Boulevard Ben Badis, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>D</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>280000</PRIX>
+        <SRC1>./PICTURES/appartements/5-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/5-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/5-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>6</ID>
+         <NOM>Loft Panoramique</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>250 M²</SUPERFICIE>
+        <LOCALISATION>303 Rue Larbi Ben M'hidi, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>D</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>370000</PRIX>
+        <SRC1>./PICTURES/appartements/6-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/6-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/6-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>7</ID>
+         <NOM>Duplex Jardin Secret</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>430 M²</SUPERFICIE>
+        <LOCALISATION>404 Boulevard Mohamed V,TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>F</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>410000</PRIX>
+        <SRC1>./PICTURES/appartements/7-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/7-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/7-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>8</ID>
+         <NOM>Penthouse Horizon</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>150 M²</SUPERFICIE>
+        <LOCALISATION>505 Rue de la Khemisti Sid, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>B</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>210000</PRIX>
+        <SRC1>./PICTURES/appartements/8-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/8-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/8-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>9</ID>
+         <NOM>Cottage des Vallées</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>654 M²</SUPERFICIE>
+        <LOCALISATION>606 BVD de l'Indépendance, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>G</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>650000</PRIX>
+        <SRC1>./PICTURES/appartements/9-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/9-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/9-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>10</ID>
+        <NOM> Lune de Miel</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>130 M²</SUPERFICIE>
+        <LOCALISATION>707 Rue Belaid Idir, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>130000</PRIX>
+         <SRC1>./PICTURES/appartements/10-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/10-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/10-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>11</ID>
+         <NOM>Chalet Enchanté</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>320 M²</SUPERFICIE>
+        <LOCALISATION>808 BVD Zighout Youcef, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>540000</PRIX>
+        <SRC1>./PICTURES/appartements/11-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/11-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/11-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>12</ID>
+        <NOM>Appartement Oasis</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>90 M²</SUPERFICIE>
+        <LOCALISATION>909 Rue Maâtka Mohamed, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>B</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>145000</PRIX>
+        <SRC1>./PICTURES/appartements/12-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/12-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/12-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>13</ID>
+        <NOM>Villa Sérénité</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>290 M²</SUPERFICIE>
+        <LOCALISATION>120 BVD Colonel Amirouche, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>780000</PRIX>
+        <SRC1>./PICTURES/appartements/13-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/13-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/13-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>14</ID>
+         <NOM>Duplex Perle Noire</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>70 M²</SUPERFICIE>
+        <LOCALISATION>220 Rue Ben Boulaïd, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>B</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>180000</PRIX>
+        <SRC1>./PICTURES/appartements/14-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/14-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/14-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>15</ID>
+        <NOM>Loft Évasion</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>360 M²</SUPERFICIE>
+        <LOCALISATION>320 Boulevard Frantz Fanon, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>444000</PRIX>
+        <SRC1>./PICTURES/appartements/15-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/15-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/15-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>16</ID>
+         <NOM>Villa Lumières</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>800 M²</SUPERFICIE>
+        <LOCALISATION>420 Rue Aïssat Idir, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>G</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>543000</PRIX>
+        <SRC1>./PICTURES/appartements/16-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/16-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/16-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>17</ID>
+         <NOM>Maison Douce Brise</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>400 M²</SUPERFICIE>
+        <LOCALISATION>520 BVD Slimane Amirat,TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>D</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>765000</PRIX>
+        <SRC1>./PICTURES/appartements/17-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/17-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/17-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>18</ID>
+        <NOM>Villa Zenith</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>50 M²</SUPERFICIE>
+        <LOCALISATION>620 Rue Ali Khoudja, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>190000</PRIX>
+        <SRC1>./PICTURES/appartements/18-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/18-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/18-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>19</ID>
+         <NOM>Chalet Vue Magique</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>850 M²</SUPERFICIE>
+        <LOCALISATION>720 Boulevard Si El Haouès, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>G</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>1500000</PRIX>
+        <SRC1>./PICTURES/appartements/19-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/19-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/19-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>20</ID>
+         <NOM>Le Djurdjura</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>86 M²</SUPERFICIE>
+        <LOCALISATION>820 Rue Djurdjura, TIZI-OUZOU</LOCALISATION>
+        <CONSO_ENERGETIQUE>B</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>110000</PRIX>
+        <SRC1>./PICTURES/appartements/20-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/20-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/20-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>21</ID>
+        <NOM>Résidence Algéroise</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>330 M²</SUPERFICIE>
+        <LOCALISATION>111 Boulevard Z.Youcef, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>430000</PRIX>
+        <SRC1>./PICTURES/appartements/21-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/21-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/21-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>22</ID>
+        <NOM>Appartement Bleu Méditerranée</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>180 M²</SUPERFICIE>
+        <LOCALISATION>222 Rue Didouche Mourad, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>139000</PRIX>
+        <SRC1>./PICTURES/appartements/22-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/22-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/22-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>23</ID>
+         <NOM>Villa Algérian Pearl</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>351 M²</SUPERFICIE>
+        <LOCALISATION>333 Boulevard Amirouche, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>D</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>390000</PRIX>
+        <SRC1>./PICTURES/appartements/23-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/23-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/23-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>24</ID>
+        <NOM>Duplex Belle Vue</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>410 M²</SUPERFICIE>
+        <LOCALISATION>444 Rue Larbi Ben M'hidi, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>F</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>576000</PRIX>
+        <SRC1>./PICTURES/appartements/24-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/24-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/24-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>25</ID>
+         <NOM>Loft Casbah Chic</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>60 M²</SUPERFICIE>
+        <LOCALISATION>555 Boulevard Mohamed V, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>B</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>120000</PRIX>
+        <SRC1>./PICTURES/appartements/25-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/25-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/25-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>26</ID>
+         <NOM>Penthouse Éclat d'ALGER</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>70 M²</SUPERFICIE>
+        <LOCALISATION>662 Rue Hassiba B Bouali, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>B</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>170000</PRIX>
+        <SRC1>./PICTURES/appartements/26-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/26-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/26-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>27</ID>
+        <NOM>Maison Algérie Charme</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>50 M²</SUPERFICIE>
+        <LOCALISATION>777 Boulevard Krim Belkacem, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>D</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>165000</PRIX>
+        <SRC1>./PICTURES/appartements/27-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/27-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/27-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>28</ID>
+        <NOM>Chalet Majestueux</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>453 M²</SUPERFICIE>
+        <LOCALISATION>888 Rue Ali Khoudja, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>F</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>632000</PRIX>
+        <SRC1>./PICTURES/appartements/28-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/28-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/28-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>29</ID>
+        <NOM>Appartement ALGERian Dream</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>167 M²</SUPERFICIE>
+        <LOCALISATION>999 Boulevard Frantz Fanon, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>201000</PRIX>
+        <SRC1>./PICTURES/appartements/29-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/29-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/29-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>30</ID>
+        <NOM>Résidence Oasis Urbaine</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>381 M²</SUPERFICIE>
+        <LOCALISATION>101 Rue Belouizdad, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>D</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>398000</PRIX>
+        <SRC1>./PICTURES/appartements/30-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/30-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/30-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>31</ID>
+        <NOM>Villa Ciel d'ALGER</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>133 M²</SUPERFICIE>
+        <LOCALISATION>202 Boulevard Che Guevara, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>B</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>179000</PRIX>
+        <SRC1>./PICTURES/appartements/31-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/31-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/31-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>32</ID>
+         <NOM>Studio Algérois</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>431 M²</SUPERFICIE>
+        <LOCALISATION>303 Rue des Frères Menani, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>F</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>398000</PRIX>
+        <SRC1>./PICTURES/appartements/32-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/32-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/32-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>33</ID>
+        <NOM>Duplex Algiers Heights</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>140 M²</SUPERFICIE>
+        <LOCALISATION>404 Boulevard de l'Indépendance, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>180000</PRIX>
+        <SRC1>./PICTURES/appartements/33-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/33-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/33-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>34</ID>
+        <NOM>Maison Algérie Enchantée</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>293 M²</SUPERFICIE>
+        <LOCALISATION>505 Rue Didouche Mourad, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>420000</PRIX>
+        <SRC1>./PICTURES/appartements/34-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/34-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/34-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>35</ID>
+         <NOM>Appartement Vue sur la Baie</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>230 M²</SUPERFICIE>
+        <LOCALISATION>606 Boulevard S Abd, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>E</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>180000</PRIX>
+        <SRC1>./PICTURES/appartements/35-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/35-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/35-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>36</ID>
+         <NOM>Loft Élégance Algérienne</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>301 M²</SUPERFICIE>
+        <LOCALISATION>707 Rue Ben M'hidi, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>F</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>450000</PRIX>
+        <SRC1>./PICTURES/appartements/36-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/36-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/36-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>37</ID>
+          <NOM>Villa Algérie Belle</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>220 M²</SUPERFICIE>
+        <LOCALISATION>808 Boulevard S Yahia, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>E</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>187000</PRIX>
+        <SRC1>./PICTURES/appartements/37-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/37-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/37-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>38</ID>
+          <NOM>Cottage Algérois</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>276 M²</SUPERFICIE>
+        <LOCALISATION>909 Rue D Mourad, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>690000</PRIX>
+        <SRC1>./PICTURES/appartements/38-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/38-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/38-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>39</ID>
+        <NOM>Penthouse Lumière d'ALGER</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>APPARTEMENT</TYPE>
+        <SUPERFICIE>170 M²</SUPERFICIE>
+        <LOCALISATION>121 Boulevard des Martyrs, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>160000</PRIX>
+        <SRC1>./PICTURES/appartements/39-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/39-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/39-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+    <BIEN_IMMOBILIER>
+        <ID>40</ID>
+         <NOM>Chalet Algiers Panorama</NOM>
+        <PIECES>5</PIECES>
+        <CHAUFFAGE>gaz</CHAUFFAGE>
+        <TYPE>VILLA</TYPE>
+        <SUPERFICIE>338 M²</SUPERFICIE>
+        <LOCALISATION>222 Rue Hassiba Ben Bouali, ALGER</LOCALISATION>
+        <CONSO_ENERGETIQUE>C</CONSO_ENERGETIQUE>
+        <ETAGE>1</ETAGE>
+        <ASCENSEUR>NON</ASCENSEUR>
+        <JARDIN>NON</JARDIN>
+        <PISCINE>OUI</PISCINE>
+        <PRIX>670000</PRIX>
+         <SRC1>./PICTURES/appartements/40-1.jpg</SRC1>
+        <SRC2>./PICTURES/appartements/40-2.jpg</SRC2>
+        <SRC3>./PICTURES/appartements/40-3.jpg</SRC3>
+    </BIEN_IMMOBILIER>
+</AGENCE_IMMOBILIERE>

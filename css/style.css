@@ -1,0 +1,550 @@
+/*Page Login*/
+#DivPrincipalePageLOgin{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-image: url("../PICTURES/hotelDeVilleOran111.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 900px;
+     width: 100%;
+}
+
+#contFormulaire{
+     margin-top: -5%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     height: 65%;
+     width: 50%;
+     box-shadow: 5px 5px 20px rgba(255, 215, 85, 0.5);
+     opacity:0.9;
+
+     
+}
+#LeftS{
+     padding: 1%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     background-color:rgb(83, 83, 83);
+     height: 100%;
+
+
+}
+#RightS{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 50%;
+     height: 100%;
+     background-color:rgba(15, 15, 15);
+
+}
+#mechtouh{
+     margin-top: -10%;
+     width: 90%;
+}
+#batbout{
+     width: 50%;
+}
+/*..................................*/
+
+#carouselExampleInterval{
+ box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+
+
+}
+
+#pageLinks{
+     display: flex;
+    flex-direction: row;
+     width: 100%;
+     padding-left: 35%;
+     
+}
+#prix{
+     font-size: 1.5em; /* Taille de la police */
+     color: #3498db; /* Couleur du texte */
+     font-weight: bold; /* Gras */
+}
+.mon-conteneur {
+     background-color: #f0f0f0;
+     text-align: center;
+     font-family: Arial, sans-serif;
+ }
+
+ .onEuvre{
+     font-family:Helvetica;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(48, 46, 46)
+ }
+ 
+ .mon-texte {
+     font-size: 18px;
+     color: #333;
+     font-weight: bold;
+ }
+#hautg{
+     width: 70%;
+     padding:3%;
+}
+#haut{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     align-items: space-between;
+}
+#settefRe{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content:space-between;
+     width: 20%;
+     margin-right: 5%;
+     margin-bottom: 1%;
+}
+#gauched{
+     margin-left: 2%;
+     display: flex;
+     flex-direction: row;
+     width: 90%;
+}
+#busstons{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     width: 50%;
+     
+}
+/*page de footer*/
+#cont{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+#fisazefi{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     background-image: url("../PICTURES/nouVLog/AlgerieRomaine1.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     color: azure;  
+     padding: 3%;
+     height:380px;
+     width: 100%;
+}
+.bling:hover{
+     transform: scale(1.25);
+     transition: 0.5s all;
+}
+a{
+color: azure;
+}
+
+#ERDD{
+     width: 200px;
+     margin-right: 1%;
+     margin-top: -6%;
+}
+#qzazeds{
+     margin-right: -12%;
+     width: 245px;
+     margin-top: -1%;
+     
+}
+#carouselExampleInterval{
+     width: 50%;
+}
+#BVDIDIUZHD{ 
+     width: 300px;
+}
+#hautBas{
+     margin-top: 2%;
+}
+#scrollbas{
+     width: 100px;
+     margin-top: 2%;
+     margin-top: 10%;
+
+}
+#scrollbas:hover{
+     transform: scale(1.15);
+     transition:0.5s;
+
+}
+#scrollhaut{
+     width: 70px;
+   
+
+}
+#scrollhaut:hover{
+     transform: scale(1.15);
+     transition:0.5s;
+
+}
+
+#Mincound{
+     margin-top: 10%;
+     display: flex;
+     flex-direction: row;
+     width: 70%;
+     align-items: center;
+     justify-content: space-around;
+}
+#ffq{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     color: azure;
+     justify-content: space-around;
+     width: 99%;
+     /*margin-top: -6%;*/
+     height: 60px;
+     border-radius:20px;
+     background-color: rgba(0, 0, 0, 0);
+}
+#navbarNav{
+     background-color: rgb(0, 0, 0,0.0);
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     width: 100%;
+}
+/*partie logo page pricipale*/
+#logoPagePrincipale{
+     width: 120px;
+    /* margin-right: -90%;*/
+}
+#principaleDIV{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     background-color:rgba(166, 166, 166, 0.911);
+     height:100%;
+     width: 100%;
+}
+#mainbody{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#navBar{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+    background-color:rgba(209, 210, 228, 0.5);
+    margin: 5px;
+    width: 80%;
+    height:5%;
+    border-radius: 10px;
+}
+#barreDeRecherche{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+    background-color:rgba(19, 138, 90, 0.5);
+    margin: 5px;
+    width: 80%;
+    height:5%;
+    border-radius: 10px;
+}
+body{
+     margin: 0;
+}
+.nav-link:hover{
+     color: rgb(168, 168, 173);
+     transform: scale(1.15);
+     transition: 0.5s all;
+}
+#divPartieHaute{
+     background-image: url("../PICTURES/nouVLog/BoujieNuit1.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     position: relative;
+     flex-direction: column;
+     align-items: center;
+    background-color:rgba(19, 138, 90, 0.5);
+    margin: 5px;
+    width: 99%;
+    height:560px;
+    border-radius: 0% 0% 10% 10%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7);
+} 
+
+#divPartieBasse{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    margin: 5px;
+    width: 99%;
+    height:55%;
+    border-radius: 10px;
+} 
+#divPartieBasseA{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    background-color:rgba(0, 0, 0, 0.626);
+    margin: 5px;
+    width: 99%;
+    height:30%;
+    border-radius: 10px;
+}
+#divPartieBasseB{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 5px;
+    width: 97%;
+    height:50%;
+    border-radius: 10px;
+}
+#divPartieBasseC{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    width: 97%;
+    height:33%;
+    border-radius: 10px;
+}
+#bang{
+     background-color: rgb(37, 179, 91);
+      width: 100%;
+     height: 30px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+#bn{
+margin-right: 60%;
+margin-left: -20%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: large;
+font-style: italic;
+background-color: brown;
+}
+#container1{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+    background-color:rgba(222, 222, 222, 0.2);
+    padding: 15px;
+    width: 70%;
+    height:50%;
+    border-radius: 10px;
+}
+
+.duxal{
+     color: azure;
+}
+#control11{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+#rabrab{
+     background-color: #33333384;
+     border-radius: 10px;
+     padding: 5px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 2%;
+}
+#settefRe1{
+     margin-top: -30px;
+     margin-bottom: 10px;
+}
+#lapojh{
+     
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+}
+#mytab{
+     width: 50%;
+     margin-top: 30px;
+     padding: 20px;
+     border-radius: 25px;
+     box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+}
+.INtPartieDRoite0{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+    margin: 5px;
+    width: 50%;
+    height:95%;
+    border-radius: 5px;
+}
+
+.INtPartieGaucHe0{
+     background-image: url("../PICTURES/armin.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items:flex-start;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: large;
+     font-style: italic;
+    margin: 5px;
+    width: 50%;
+    height:95%;
+    border-radius: 5px;
+}
+#pageLinks1{
+margin: 20px;
+}
+.Biens{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+    background-color:rgb(0, 255, 166);
+    width: 99%;
+    margin: 10px;
+    height:90%;
+    border-radius: 5px;
+}
+.Bien{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+    background-color:rgb(255, 0, 0,0.5);
+    width:33%;
+    margin: 10px;
+    height:400px;
+    border-radius: 5px;
+}
+.chango{
+     background-color:rgba(138, 19, 47, 0.5);
+
+}
+/*outil de recherche*/
+/*input*/
+label {
+     display: block;
+     font:
+       1rem 'Fira Sans',
+       sans-serif;
+   }
+   
+   input,
+   label {
+     margin: 0.4rem 0;
+   }
+/*select*/
+/* espace reserve pour affichage en galerie*/
+.bd-placeholder-img {
+     font-size: 1.125rem;
+     text-anchor: middle;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     user-select: none;
+   }
+
+   @media (min-width: 768px) {
+     .bd-placeholder-img-lg {
+       font-size: 3.5rem;
+     }
+   }
+
+   .b-example-divider {
+     width: 100%;
+     height: 3rem;
+     background-color: rgba(0, 0, 0, .1);
+     border: solid rgba(0, 0, 0, .15);
+     border-width: 1px 0;
+     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+   }
+
+   .b-example-vr {
+     flex-shrink: 0;
+     width: 1.5rem;
+     height: 100vh;
+   }
+
+   .bi {
+     vertical-align: -.125em;
+     fill: currentColor;
+   }
+
+   .nav-scroller {
+     position: relative;
+     z-index: 2;
+     height: 2.75rem;
+     overflow-y: hidden;
+   }
+
+   .nav-scroller .nav {
+     display: flex;
+     flex-wrap: nowrap;
+     padding-bottom: 1rem;
+     margin-top: -1px;
+     overflow-x: auto;
+     text-align: center;
+     white-space: nowrap;
+     -webkit-overflow-scrolling: touch;
+   }
+
+   .btn-bd-primary {
+     --bd-violet-bg: #712cf9;
+     --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+     --bs-btn-font-weight: 600;
+     --bs-btn-color: var(--bs-white);
+     --bs-btn-bg: var(--bd-violet-bg);
+     --bs-btn-border-color: var(--bd-violet-bg);
+     --bs-btn-hover-color: var(--bs-white);
+     --bs-btn-hover-bg: #6528e0;
+     --bs-btn-hover-border-color: #6528e0;
+     --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+     --bs-btn-active-color: var(--bs-btn-hover-color);
+     --bs-btn-active-bg: #5a23c8;
+     --bs-btn-active-border-color: #5a23c8;
+   }
+
+   .bd-mode-toggle {
+     z-index: 1500;
+   }
+
+   .bd-mode-toggle .dropdown-menu .active .bi {
+     display: block !important;
+   }
+/*/////////////////////////////////////////*/

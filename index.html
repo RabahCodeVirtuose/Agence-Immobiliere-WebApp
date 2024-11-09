@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ma page principale !</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="./js/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<body style="font-family: 'Helvetica', sans-serif;" id="mainbody" onload="loadXMLDatacc()">
+    <!-- dagui d lecheghali n bootstrap -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+    <!--  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var scrollingDiv = document.querySelector('#divPartieHaute');
+    
+    window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+      // Réduire la hauteur de la div en fonction de la position de défilement
+      scrollingDiv.style.maxHeight = (80 - scrollPosition) + 'vh';
+    });
+  })
+    </script>-->
+    <!-- dagui ikeffa bootstrap -->
+    <div id="principaleDIV">
+
+        <div>
+            <!--numero de téléphne aked le lien vers les diffrents réseaux sociaux-->
+        </div>
+        <div id="divPartieHaute">
+          
+            <!-- dagui anexdem une très belle photo negh une video avec un paragraphe akka widak n les agence -->
+            <div id="Mincound">
+                <img src="./PICTURES/nouVLog/12s.png" alt="logo" id="qzazeds">
+                <p style="color: azure;">Plongez dans l'univers de T Immobilier, une entreprise familiale fondée par
+                    cinq frères <br>
+                    passionnés partageant une vision commune : rendre vos rêves immobiliers une réalité. <br>
+                    Forts d'une expertise forgée au fil des années, nous sommes fiers d'être votre partenaire <br>
+                    de confiance dans le vaste paysage immobilier de l'Algérie. Que vous recherchiez un lieu <br>
+                    où créer des souvenirs inoubliables ou que vous envisagiez de vendre votre propriété <br>
+                    bien-aimée, nous sommes là à chaque étape pour vous guider. Chez T Immobilier, nous ne <br>
+                    traitons pas simplement des biens immobiliers, nous façonnons des expériences de vie. <br>
+                    Explorez notre sélection soigneusement choisie de biens à vendre et à louer, et <br>
+                    laissez-nous vous accompagner dans votre parcours vers la maison parfaite en Algérie.</p>
+
+            </div>
+            <div style="height: 30px;">
+
+            </div>
+            <div id="settefRe1">
+                <span>
+                    <i class="bi bi-facebook"></i>
+                    <a href="https://www.instagram.com/rabah_tb63/" target="_BLANK"><img src="./PICTURES/instagram.png"
+                            alt="Instagram " width="50px" class="bling"></a></span>
+                <span><a href="https://www.facebook.com/rabeh.toubal" target="_BLANK"><img src="./PICTURES/facebook.png"
+                            alt="Facebook" width="50px" class="bling"></a></span>
+                <span><a href="https://www.google.fr/maps/place/Paris+Prestige+Cars/@48.8724263,2.2962537,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPP8knDHfo-qW5JngRbfx5fhDJ7aj6pMH5Xc0Mx!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPP8knDHfo-qW5JngRbfx5fhDJ7aj6pMH5Xc0Mx%3Dw114-h86-k-no!7i4032!8i3024!4m9!1m2!2m1!1scars+paris+!3m5!1s0x47e6702f6adfaecb:0x243ba975c5ef5bf1!8m2!3d48.8724263!4d2.2962537!15sCgpjYXJzIHBhcmlzWgwiCmNhcnMgcGFyaXOSAQ91c2VkX2Nhcl9kZWFsZXLgAQA"
+                        target="_BLANK"><img src="./PICTURES/localisation.png" alt="Localisation" width="50px"
+                            class="bling"></a></span>
+                <span>
+                    <img src="./PICTURES/tel.png" alt="Appeler nous" width="50px" class="bling">
+                </span>
+            </div>
+            
+            <a href="#divPartieBasse"><img src="./PICTURES/scroll bas.png" id="scrollbas" alt="dcrom"></a>
+             
+        
+            
+        </div>
+        <div id="divPartieBasse">
+            <div id="divPartieBasseA">
+                
+            <nav id="ffq">
+                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                <a class="nav-link" href="./pages/consultations.html">Parcourir Nos Biens</a>
+                <a class="nav-link" href="#">Envoies nous un message</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Chercher ici!"  aria-label="Search"
+                        id="BVDIDIUZHD" onchange="viderres()">
+                    <div id="busstons" style="height: 38px; margin-top: 1.75%;">
+    
+                        <button class="btn btn-outline-primary" style="width: 70px;" type="submit" onclick="rechercher(event)">Search</button>
+                        <button type="button" class="btn btn-outline-success" onclick="loadLoginPage()" style="width: 70px;">Login</button>
+                    </div>
+
+                </form>
+
+            </nav>
+            
+            <form style="color: azure;" id="rabrab">
+                <label for="prixMin">Prix Min :</label>
+                <input type="number" id="prixMin" min="0" step="1000" onchange="afficherBiens3()">
+        
+                <label for="prixMax">Prix Max :</label>
+                <input type="number" id="prixMax" min="0" step="1000" onchange="afficherBiens3()">
+        
+                <label for="quartier">Wilaya :</label>
+                <select id="quartier" onchange="afficherBiens3()">
+                    <option value="Tous">Tous</option>
+                    <option value="ALGER">Alger</option>
+                    <option value=" TIZI-OUZOU">Tizi-Ouzou</option>
+                    <!-- Ajoutez d'autres options selon vos quartiers -->
+                </select>
+        
+                <label for="typeBien">Type :</label>
+                <select id="typeBien" onchange="afficherBiens3()">
+                    <option value="Tous">Tous</option>
+                    <option value="APPARTEMENT">Appartement</option>
+                    <option value="VILLA">Villa</option>
+                    <!-- Ajoutez d'autres options selon vos types de biens -->
+                </select>
+        
+            </form>
+               
+                <div id="resultats11" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="color: azure; width: 75%;height: 40%;  background-color:rgba(222, 222, 222, 0.2);">
+                </div>
+                <div id="pageLinks3" style="display:none;">        
+      
+                </div>
+
+                <!-- ad nehder chuya af l'agence nni negh -->
+                <!-- athen nessexthir ma vente negh locations -->
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="divPartieBasseB">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./PICTURES/display/Alger.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./PICTURES/display/Alger2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./PICTURES/display/Alger3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./PICTURES/display/bejaia.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./PICTURES/display/Oran.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./PICTURES/display/Oran2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <br>
+                <br>
+                <div id="pageLinks1" style="display:none;">
+
+                </div>
+                <div id="container1">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="miqmiq">
+
+                    </div>
+                </div>
+
+                <!--ad nafichi qlq biens chaque yiwen daxel n la dévision ines
+        dagui ara nessexedem la pagination akked ad nafichi 
+        5 5 kan
+            les types:
+        soit:Appartement
+             Villa 
+             Local negh garage 
+            Parking-->
+            </div>
+            <div id="divPartieBasseC">
+
+                <!--ad nafichi les villes les plus populaire avec des belles photos-->
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer id="fisazefi">
+        <div id="haut">
+            <div id="hautg">
+                <p>
+                    Chez T Immobilier, nous nous engageons à vous offrir un service exceptionnel <br>
+                    pour toutes vos transactions immobilières. Que vous cherchiez la maison de vos rêves, un
+                    investissement <br>
+
+                    immobilier ou que vous souhaitiez vendre votre propriété, notre équipe dévouée est là pour vous
+                    accompagner <br>
+                    à chaque étape du processus. Avec notre expertise du marché local, notre professionnalisme et notre
+                    engagement <br>
+                    envers la satisfaction du client, nous sommes fiers d'être votre partenaire de confiance dans le
+                    secteur immobilier. <br>
+                    Découvrez le meilleur de l'immobilier avec T Immobilier."
+                </p>
+            </div>
+            <div id="hautBas">
+                <form>
+                    <h5>Exprimez vous ici! </h5>
+                    <p>Parles nous de tes passions.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Adresse Mail">
+                        <button class="btn btn-primary" type="button">S'abonner</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        <div id="cont">
+            <div id="gauched">
+                <img src="./PICTURES/nouVLog/LogoBagita.png" alt="lgo" id="ERDD" width="120px">
+                <p>
+                    2023 T IMMOBILIER , Inc. All rights reserved.
+                </p>
+
+            </div>
+
+
+            <div id="settefRe">
+                
+                <span>
+                    <i class="bi bi-facebook"></i>
+                    <a href="https://www.instagram.com/rabah_tb63/" target="_BLANK"><img src="./PICTURES/instagram.png"
+                            alt="Instagram " width="50px" class="bling"></a></span>
+                <span><a href="https://www.facebook.com/rabeh.toubal" target="_BLANK"><img src="./PICTURES/facebook.png"
+                            alt="Facebook" width="50px" class="bling"></a></span>
+                <span><a href="https://www.google.fr/maps/place/Paris+Prestige+Cars/@48.8724263,2.2962537,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPP8knDHfo-qW5JngRbfx5fhDJ7aj6pMH5Xc0Mx!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPP8knDHfo-qW5JngRbfx5fhDJ7aj6pMH5Xc0Mx%3Dw114-h86-k-no!7i4032!8i3024!4m9!1m2!2m1!1scars+paris+!3m5!1s0x47e6702f6adfaecb:0x243ba975c5ef5bf1!8m2!3d48.8724263!4d2.2962537!15sCgpjYXJzIHBhcmlzWgwiCmNhcnMgcGFyaXOSAQ91c2VkX2Nhcl9kZWFsZXLgAQA"
+                        target="_BLANK"><img src="./PICTURES/localisation.png" alt="Localisation" width="50px"
+                            class="bling"></a></span>
+                <span>
+                    <img src="./PICTURES/tel.png" alt="Appeler nous" width="50px" class="bling">
+                </span>
+                <span style="width: 30px;">
+
+                </span>
+                <span>
+                    <a href="#principaleDIV"><img src="./PICTURES/scroll haut.png" id="scrollhaut" alt="dcrom"></a>
+
+                </span>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
